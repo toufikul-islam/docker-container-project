@@ -1,0 +1,19 @@
+docker build -t docker-project-app .
+docker run -p 4200:4200 docker-project-app
+
+npm install supports-color
+docker-compose up
+
+
+npx ng build --configuration production
+ng --version
+npm install -g @angular/cli
+ng build --configuration production
+
+docker push toufikulislam/docker-project:tagname
+
+docker images
+docker tag docker-project-app:latest toufikulislam/docker-project:latest
+docker images
+docker login
+docker push toufikulislam/docker-project:tagname
